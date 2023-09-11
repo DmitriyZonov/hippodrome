@@ -19,7 +19,7 @@ public class Main {
         Hippodrome hippodrome = new Hippodrome(horses);
         LOGGER.info("Начало скачек. Количество участников: {}", horses.size());
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 100; i++) {
             hippodrome.move();
             watch(hippodrome);
             TimeUnit.MILLISECONDS.sleep(200);
